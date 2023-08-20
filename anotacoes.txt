@@ -1,3 +1,25 @@
 @joseivangeraldo ➜ /workspaces/EbookPython (main) $ python
 Python 3.10.8 (main, Nov 16 2022, 17:55:27) [GCC 9.4.0] on linux
 Type "help", "copyright", "credits" or "license" for more information.
+
+>>> print("Hello World")
+Hello World
+>>> print(2+3)
+5
+>>> print("2+3=",2+3)
+2+3= 5
+
+>>> def Hello():
+...     print("Hello")
+...     print("Computer is fun")
+... 
+>>> Hello()
+Hello
+Computer is fun
+>>>
+
+>>> def greet(person):
+...     print("Alo", person)
+>>> greet("Ivan")
+Alo Ivan
+>>> 
