@@ -54,3 +54,7 @@ Hello world
 LIMPAR A TELA DO IDLE :
 import os
 os.system('clear') or None
+
+MUDAR O ULTIMO CARACTER DE PRINT:
+print ("The answer is", end=" ")
+print (3 + 4)
