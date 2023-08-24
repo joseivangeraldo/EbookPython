@@ -83,3 +83,5 @@ Enter an expression: 3 + 4 * 5
 
 PAREI pagina 47
 Example Program: Future Value
+PAREI pagina 57
+Numeric Data Types
