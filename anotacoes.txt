@@ -88,3 +88,26 @@ FUNCAO TYPE QUE RETORNA O TIPO DE DADOS:
 <class 'float'>
 >>> type(-6)
 <class 'int'>
+
+26/08/2023 PAG 62
+13.21 Type Conversions and Rounding
+
+>>> int(4.5)
+4
+>>> int(3.9)
+3
+>>> float(4)
+4.0
+>>> float(int(3.3))
+3.0
+>>> int(float(3.3))
+3
+>>> int(float(3))
+3
+>>> int ("32")
+32
+
+>>> pi = 3.141592653589793
+>>> round(pi, 2)
+3.14
+PAREI:13.31 Using the Math Library pag 65
