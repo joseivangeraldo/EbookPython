@@ -111,3 +111,17 @@ FUNCAO TYPE QUE RETORNA O TIPO DE DADOS:
 >>> round(pi, 2)
 3.14
 PAREI:13.31 Using the Math Library pag 65
+
+>>> # simultaneous input using eval
+>>> x,y = eval (input ("Enter (x,y) : ") )
+Enter (x,y) : 3,4
+>>> X
+3
+>>> y
+4
+>>> # does not work with float
+>>> x,y = float (input ("Enter (x,y) : ") )
+Enter (x,y) : 3,4
+Traceback (most recent call last) :
+File "<stdin >", line 1, in <module >
+ValueError: could not convert string to float: '3,4'
