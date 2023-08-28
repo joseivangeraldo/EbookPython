@@ -125,3 +125,5 @@ Enter (x,y) : 3,4
 Traceback (most recent call last) :
 File "<stdin >", line 1, in <module >
 ValueError: could not convert string to float: '3,4'
+
+13.51 Limitations of Computer Arithmetic PAG71
