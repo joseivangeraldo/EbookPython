@@ -1,0 +1,5 @@
+docker pull jupyter/tensorflow-notebook
+docker pull jupyter/datascience-notebook
+docker run -p 10000:8888 jupyter/scipy-notebook
+docker run -p 10000:8888 jupyter/tensorflow-notebook
+docker run -p 10000:8888 jupyter/datascience-notebook
