@@ -1,5 +1,10 @@
+PARA INSTALAR DOCKER NOTEBOOK EM GUI INTERFACE
 docker pull jupyter/tensorflow-notebook
 docker pull jupyter/datascience-notebook
 docker run -p 10000:8888 jupyter/scipy-notebook
 docker run -p 10000:8888 jupyter/tensorflow-notebook
 docker run -p 10000:8888 jupyter/datascience-notebook
+
+PARA INSTALAR UBUNTU EM GUI INTERFACE
+docker pull dorowu/ubuntu-desktop-lxde-vnc:latest
+docker run -p 6080:80 -e HTTP_PASSWORD=mypassword -v /dev/shm:/dev/shm dorowu/ubuntu-desktop-lxde-vnc
