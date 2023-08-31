@@ -1014,13 +1014,3 @@ update()
 if __name__ == "__main__":
     test()
 
-
-    from graphics import *
-
-def main():
-        win = GraphWin()
-
-	# graphics code goes here
-
-	raw_input("Press <Enter> to quit")
-	win.close()

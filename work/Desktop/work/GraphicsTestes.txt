@@ -1,0 +1,17 @@
+ import graphics
+>>> 
+>>> win= graphics.GraphWin()
+>>> winclose()
+Traceback (most recent call last):
+  File "<pyshell#3>", line 1, in <module>
+    winclose()
+NameError: name 'winclose' is not defined
+>>> win.close()
+
+>>> from graphics import *
+>>> win = Graphwin()
+Traceback (most recent call last):
+  File "<pyshell#8>", line 1, in <module>
+    win = Graphwin()
+NameError: name 'Graphwin' is not defined
+>>> win = GraphWin()
