@@ -48,3 +48,13 @@ Line(Point(20.0, 30.0), Point(180.0, 165.0))
 >>> oval = Oval(Point(20, 150), Point(180, 199))
 >>> oval.draw(win)
 Oval(Point(20.0, 150.0), Point(180.0, 199.0))
+
+WRONG PYTHON FORM
+>>> import graphics
+>>> Circle(Point(100.0, 100.0), 30)
+Circle(Point(100.0, 100.0), 30)
+>>> leftEye = Circle(Point(100.0, 100.0), 30)
+>>> leftEye.setFill('yellow')
+>>> leftEye.setOutline('red')
+>>> rightEye = leftEye
+>>> rightEye.move(20, 0)
