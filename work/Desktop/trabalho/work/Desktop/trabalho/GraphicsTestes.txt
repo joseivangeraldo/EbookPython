@@ -1,0 +1,60 @@
+ import graphics
+>>> 
+>>> win= graphics.GraphWin()
+>>> winclose()
+Traceback (most recent call last):
+  File "<pyshell#3>", line 1, in <module>
+    winclose()
+NameError: name 'winclose' is not defined
+>>> win.close()
+
+>>> from graphics import *
+>>> win = Graphwin()
+Traceback (most recent call last):
+  File "<pyshell#8>", line 1, in <module>
+    win = Graphwin()
+NameError: name 'Graphwin' is not defined
+>>> win = GraphWin()
+
+>>> import graphics
+>>> win = GraphWin()
+>>> p.draw(win)
+Traceback (most recent call last):
+  File "<pyshell#4>", line 1, in <module>
+    p.draw(win)
+NameError: name 'p' is not defined
+>>> p = Point(50, 60)
+>>> p.draw(win)
+Point(50.0, 60.0)
+>>> p2 = Point(140, 100)
+>>> p2.draw(win)
+Point(140.0, 100.0)
+>>> 
+
+DESENHANDO FORMAS VARIADAS E RETAS
+>>> import graphics
+>>> win = GraphWin('Shapes')
+>>> center = Point(100, 100)
+>>> circ = Circle(center, 30)
+>>> circ.setFill('red')
+>>> circ.draw(win)
+Circle(Point(100.0, 100.0), 30)
+>>> label = Text(center, "Red Circle")
+>>> label.draw(win)
+Text(Point(100.0, 100.0), 'Red Circle')
+>>> line = Line(Point(20, 30), Point(180, 165))
+>>> line.draw(win)
+Line(Point(20.0, 30.0), Point(180.0, 165.0))
+>>> oval = Oval(Point(20, 150), Point(180, 199))
+>>> oval.draw(win)
+Oval(Point(20.0, 150.0), Point(180.0, 199.0))
+
+WRONG PYTHON FORM
+>>> import graphics
+>>> Circle(Point(100.0, 100.0), 30)
+Circle(Point(100.0, 100.0), 30)
+>>> leftEye = Circle(Point(100.0, 100.0), 30)
+>>> leftEye.setFill('yellow')
+>>> leftEye.setOutline('red')
+>>> rightEye = leftEye
+>>> rightEye.move(20, 0)
