@@ -12,8 +12,8 @@ DEFAULT DESKTOP USER
 docker run -p 6080:80 -e USER=doro -e PASSWORD=password -v /dev/shm:/dev/shm dorowu/ubuntu-desktop-lxde-vnc
 
 COPIA TODO O DIRETORIO DO CONTAINER PARA A PASTA DE TRABALHO DO CODESPACE
-docker cp bcc2e2b4ff26:/root/Desktop/trabalho /workspaces/EbookPython/work/Desktop
+docker cp bcc2e2b4ff26:/root/Desktop /workspaces/EbookPython/work
 
 COPIA TODO O DIRETORIO DE TRABALHO PARA A PASTA DO DOCKER
-docker cp /workspaces/EbookPython/work bcc2e2b4ff26:/root/Desktop/trabalho
+docker cp /workspaces/EbookPython/work bcc2e2b4ff26:/root/Desktop
 
