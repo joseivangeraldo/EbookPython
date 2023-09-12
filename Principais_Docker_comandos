@@ -392,31 +392,10 @@ ivan@ivan-22V280-L-BY31P1:~$ docker rmi -f postgres:10.10
 Untagged: postgres:10.10
 
 ################################################################
+CONSTRUINDO UM CONTAINER A PARTIR DO DOCKERFILE
 ivan@ivan-22V280-L-BY31P1:~/Docker$ docker build -t hi-docker .
-Sending build context to Docker daemon  3.072kB
-Step 1/4 : FROM node:alpine
-alpine: Pulling from library/node
-63b65145d645: Pull complete 
-2012da848ea4: Pull complete 
-5ac0500b54c0: Pull complete 
-8e164879ca98: Pull complete 
-Digest: sha256:78fa26eb2b8081e9005253e816ed75eaf6f828feeca1e1956f476356f050d816
-Status: Downloaded newer image for node:alpine
- ---> 4615c4abcbab
-Step 2/4 : COPY . /app
- ---> d546bc5543dc
-Step 3/4 : WORKDIR /app
- ---> Running in 72324cd11801
-Removing intermediate container 72324cd11801
- ---> 35f2415f82ec
-Step 4/4 : CMD node app.js
- ---> Running in 63db31f0b124
-Removing intermediate container 63db31f0b124
- ---> 2ceac7c698b2
-Successfully built 2ceac7c698b2
-Successfully tagged hi-docker:latest
 
-###Puchando o Ubuntu no modo interativo.#####
+##PUXANDO UBUNTU NO MODO INTERATIVO.#####
 ELE RODA E APÓS ENCERRADO ELE SAI DA NOSSA MAQUINA
 ivan@ivan-22V280-L-BY31P1:~$ docker run -it ubuntu
 Unable to find image 'ubuntu:latest' locally
@@ -428,12 +407,6 @@ root@052d9e87f2cc:/# echo Hi
 Hi
 root@052d9e87f2cc:/# echo $0 ####QUAL É MEU DIRETORIO
 /bin/bash
-root@052d9e87f2cc:/# history
-    1  ls
-    2  whoami
-    3  echo Hi
-    4  echo $0
-    5  history
 root@052d9e87f2cc:/# 
 #####Listar todos APT #####ADVANCED PACKET TOOL
 root@052d9e87f2cc:/# apt list
@@ -525,7 +498,7 @@ CONTAINER ID   IMAGE     COMMAND       CREATED             STATUS             PO
 #####, COM O ID DO CONTAINER LOGAR NO BASH
 ivan@ivan-22V280-L-BY31P1:~$ docker exec -it -u andre 534c2d0d6a76 bash  
 andre@534c2d0d6a76:/$ ivan@ivan-22V280-L-BY31P1:~$ 
-#########VER PASSWORD LISTASDE FORMA ENCRIPTADA #########33333
+#########VER PASSWORD LISTAS DE FORMA ENCRIPTADA #########33333
 root@41fee1bf1ae7:~# cat /etc/shadow
 andre:!:19410:0:99999:7:::
 
