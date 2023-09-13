@@ -590,6 +590,7 @@ ivan@ivan-22V280-L-BY31P1:~/Documentos/Udemy/Docker/app/app$ docker image tag 69
 ivan@ivan-22V280-L-BY31P1:~/Documentos/Udemy/Docker/app/app$ docker build -t app:v2 .
 ###########RENOMEIO A TAG NOVAMENTE###############
 ivan@ivan-22V280-L-BY31P1:~/Documentos/Udemy/Docker/app/app$ docker image tag 91d1b65bf536 joseivangeraldo/app:v2
+ubuntu_grafico
 #######DEPOIS FAÇO O PUSH PARA O REPOSTITORIO ################
 ivan@ivan-22V280-L-BY31P1:~/Documentos/Udemy/Docker/app/app$ docker push joseivangeraldo/app:v2
 ivan@ivan-22V280-L-BY31P1:~/Documentos/Udemy/Docker/app/app$ docker image load -i appv2.tar
