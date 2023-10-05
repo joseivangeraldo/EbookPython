@@ -15,5 +15,5 @@ COPIA TODO O DIRETORIO DO CONTAINER PARA A PASTA DE TRABALHO DO CODESPACE
 docker cp bcc2e2b4ff26:/root/Desktop /workspaces/EbookPython/work/GITHUB
 
 COPIA TODO O DIRETORIO DE TRABALHO PARA A PASTA DO DOCKER
-docker cp /workspaces/EbookPython/work/GITHUB bcc2e2b4ff26:/root/Desktop
+docker cp /workspaces/EbookPython/work/GITHUB 8ec832ab92b5:/root/Desktop
 
